@@ -31,6 +31,37 @@
         .manrope {
             font-family: "Manrope", serif;
         }
+
+
+        /* circle css */
+        .progress-ring {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .progress-ring circle {
+            stroke-width: 10;
+            fill: transparent;
+        }
+
+        .progress-ring .bg-circle {
+            stroke: #e5e7eb;
+        }
+
+        .progress-ring .progress-circle {
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.6s ease-in-out;
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
     </style>
     <title>B9A3 Hockey's</title>
 </head>
@@ -80,7 +111,8 @@
                     <div class="absolute rounded-xl bg-black p-12 right-4 bottom-4 hidden md:block">
                         <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
                         <p class="font-medium text-[#9393A0]">the remarkable individuals who dedicate themselves to the
-                            frontlines <br> of action and impact. These are the unsung champions, the ones whose hard work
+                            frontlines <br> of action and impact. These are the unsung champions, the ones whose hard
+                            work
                             and determination</p>
                     </div>
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -93,7 +125,8 @@
                     <div class="absolute rounded-xl bg-black p-12 right-4 bottom-4 hidden md:block">
                         <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
                         <p class="font-medium text-[#9393A0]">the remarkable individuals who dedicate themselves to the
-                            frontlines <br> of action and impact. These are the unsung champions, the ones whose hard work
+                            frontlines <br> of action and impact. These are the unsung champions, the ones whose hard
+                            work
                             and determination</p>
                     </div>
                     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -128,38 +161,70 @@
             </div>
             <hr class="border-t-2 border-dashed border-gray-400 opacity-50">
             <div class="grid grid-cols-1  lg:grid-cols-4 gap-14 lg:gap-0 mt-20">
+                <!--  -->
                 <div class="text-center">
-                    <div class="flex justify-center">
-                        <div class="radial-progress text-[#FF4240] text-2xl font-extrabold" style="--value:70;"
-                            role="progressbar">70%</div>
+                    <div class="flex justify-center mb-4">
+                        <div class="progress-ring">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <circle class="bg-circle" cx="50" cy="50" r="40" />
+                                <circle class="progress-circle" cx="50" cy="50" r="40" stroke="#FF4240"
+                                    stroke-dasharray="251.2" stroke-dashoffset="32"></circle>
+                            </svg>
+                            <span class="progress-text text-black">87%</span>
+                        </div>
                     </div>
                     <h4 class="font-semibold text-xl text-[#131318]">Prayer Facility</h4>
-                    <p class="text-[#9393A0]">The facility is clean, <br> comfortable.</p>
+                    <p class="text-[rgb(147,147,160)]">Our professional hockey <br> club is committed to fostering</p>
                 </div>
+                <!--  -->
+                <!--  -->
                 <div class="text-center">
-                    <div class="flex justify-center">
-                        <div class="radial-progress text-[#49D293] text-2xl font-extrabold" style="--value:70;"
-                            role="progressbar">95%</div>
+                    <div class="flex justify-center mb-4">
+                        <div class="progress-ring">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <circle class="bg-circle" cx="50" cy="50" r="40" />
+                                <circle class="progress-circle" cx="50" cy="50" r="40" stroke="#49D293"
+                                    stroke-dasharray="251.2" stroke-dashoffset="32"></circle>
+                            </svg>
+                            <span class="progress-text text-black">95%</span>
+                        </div>
                     </div>
                     <h4 class="font-semibold text-xl text-[#131318]">Experienced Coach</h4>
-                    <p class="text-[#9393A0]">expert technique corrections, <br> and motivational support.</p>
+                    <p class="text-[rgb(147,147,160)]">expert technique corrections, <br> and motivational support.</p>
                 </div>
+                <!--  -->
+                <!--  -->
                 <div class="text-center">
-                    <div class="flex justify-center">
-                        <div class="radial-progress text-[#FFB546] text-2xl font-extrabold" style="--value:70;"
-                            role="progressbar">90%</div>
+                    <div class="flex justify-center mb-4">
+                        <div class="progress-ring">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <circle class="bg-circle" cx="50" cy="50" r="40" />
+                                <circle class="progress-circle" cx="50" cy="50" r="40" stroke="#FFB546"
+                                    stroke-dasharray="251.2" stroke-dashoffset="32"></circle>
+                            </svg>
+                            <span class="progress-text text-black">90%</span>
+                        </div>
                     </div>
                     <h4 class="font-semibold text-xl text-[#131318]">Senior Player</h4>
                     <p class="text-[#9393A0]">program is designed to help you <br> maintain peak performance .</p>
                 </div>
+                <!--  -->
+                <!--  -->
                 <div class="text-center">
-                    <div class="flex justify-center">
-                        <div class="radial-progress text-[#4C8DF1] text-2xl font-extrabold" style="--value:70;"
-                            role="progressbar">80%</div>
+                    <div class="flex justify-center mb-4">
+                        <div class="progress-ring">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <circle class="bg-circle" cx="50" cy="50" r="40" />
+                                <circle class="progress-circle" cx="50" cy="50" r="40" stroke="#4C8DF1"
+                                    stroke-dasharray="251.2" stroke-dashoffset="32"></circle>
+                            </svg>
+                            <span class="progress-text text-black">80%</span>
+                        </div>
                     </div>
                     <h4 class="font-semibold text-xl text-[#131318]">Training Ground</h4>
                     <p class="text-[#9393A0]">Designed for both hockey players <br> and outdoor adventurers</p>
                 </div>
+                <!--  -->
             </div>
         </section>
         <!-- programs section  -->
